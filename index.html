@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>ADIMO - Login</title>
+    </head>
+    <body>
+        
+        <div class="container-login">
+
+            <div class="img-box">
+              <img src="./assets/mansao.jpg" alt="Mansão">
+            </div>
+
+            <div class="content-box">
+                <div class="form-box">
+                    <h2>Entrar</h2>
+                    <form  onsubmit="return checkLogin()">
+                        <div class="input-box">
+                            <span>Usuário:</span>
+                            <input id="usuario" type="text" class='reste' placeholder="Seu Usuário" required/>
+                            <div class="mb-3">
+                        </div>
+                        </div>
+  
+                        <div class="input-box">
+                            <span>Senha:</span>
+                            <input id="senha" type="password" placeholder="Sua Senha" required/>
+                        </div>
+  
+                        <div class="remember">
+                            <label>
+                                <input type="checkbox"/> Lembrar de mim
+                            </label>
+                            <a href="/teste">Esqueceu a senha?</a>
+                        </div>
+  
+                        <div class="input-button">
+                          <Button class="btnEntrar">Entrar</Button>
+                        </div>
+                        
+                        <div class="input-box">
+                          <p>Não Tem Uma Conta? <a href="./cadastro.html">Criar</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    <script src="./script/login.js"></script>
+</html>

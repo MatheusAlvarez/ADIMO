@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/fichaCadastral.css">
+        <title>ADIMO - Ficha Cadastral</title>
+    </head>
+    <body>
+        <div class="container">
+            <form id="cadastroForm">
+            <h2>Ficha Cadastral</h2>
+
+            <label for="nome">Nome do cliente:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="nome">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="renda">Renda Mensal:</label>
+            <input type="number" id="renda" name="renda" required>
+
+            <a href="./atendenteHome.html"><button type="button" onclick="concluirCadastro()">Concluir Cadastro</button></a>
+            
+            </form>
+        </div>
+
+        <script src="./script/fichaCadastral.js"></script>
+    </body>
+</html>

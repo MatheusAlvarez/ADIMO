@@ -1,0 +1,499 @@
+/* Localização */
+/* ------------------ Seção Header ------------------ */
+/* ------------------ Seção Banner de apresentação ------------------ */
+/* ------------------ Seção Busca ------------------ */
+/* ------------------ Seção Destinos ------------------ */
+/* ------------------ Seção Ofertas ------------------ */
+/* ------------------ Seção Economize ------------------ */
+/* ------------------ Seção Footer ------------------ */
+/* ------------------ Seção Responsiva ------------------ */
+
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    font-family: Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: #003580;
+}
+
+input{
+    width: 60%;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 1rem;
+    border: none;
+    margin-right: 10px;
+}
+
+.container {
+    width: 85%; /* largura */
+    margin: 0 auto; /* centraliza o coteúdo */
+}
+
+/* ------------------ Seção Header ------------------ */
+    
+    /* Container geral do header */
+    #header-content {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    /* logo da imobiliaria */
+    .logo {
+        display: flex;
+        justify-content: space-between; /* alinha o conteúdo na horizontal */
+        padding: 10px;
+    }    
+    .logo p {
+        color: white;
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    /* Alinhas os itens */
+    .row-center {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Texto BRL */
+    #brl-button {
+        background-color: transparent;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    /* Botão com bandeira do Brasil */
+    #button-language {
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+    }    
+    #button-language img {
+        width: 25px;
+        border-radius: 50px; /* deixar a borda redonda */
+    }
+
+    /* Botão ? */
+    #info-button {
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+        border: 1px solid white;
+        width: 22px;
+        height: 22px;
+        text-align: center;
+        border-radius: 50px;
+        margin: 0 10px;
+    }
+
+    /* CSS referente ao menu de navegação */
+    #menu-options > ul > li > a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+    }    
+    #menu-options ul li a img {
+        margin-right: 8px;
+    }    
+    #menu-options ul li:nth-child(1) a {
+        border: 1px solid white;
+        padding: 12px;
+        border-radius: 50px;
+        background-color: hsla(0, 0%, 100%, .1);
+    }    
+
+/* ------------------ Fim Seção Header ------------------ */
+
+/* ------------------ Seção Banner de apresentação ------------------ */
+
+    /* ID banner de apresentação */
+    #banner-apresentation {
+        height: 100%;
+        background-image: url("../assets/atendente/atendente.png");        
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 100px 0px;
+        color: white;
+    }
+    #banner-apresentation p {
+        font-size: 22px;
+        font-weight: 300;
+        margin: 20px 0;
+    }
+    #banner-apresentation h1 {
+        font-size: 45px;
+        width: 50%;
+    }
+    #banner-apresentation button {
+        background-color: #0071c2;
+        border: none;
+        padding: 12px 18px;
+    }
+    #banner-apresentation button a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 30px;
+        font-size: 16px;
+    }
+
+/* ------------------ Fim Seção Banner de apresentação ------------------ */
+
+/* ------------------ Seção Busca ------------------ */
+    
+    /* estrutura do formulário */
+    #form-filter-content
+    {
+        border: 2px solid #febb02;
+        background-color: #febb02;
+        border-radius: 5px;
+        display: flex;
+        height: 45px;
+        margin-top: -20px;
+    }
+
+    /* Cada campo do formulário */
+    .field {
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        margin-right: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+    .field input {
+        height: 65%;
+        width: 90%;
+        border: none;
+        margin: 0 auto;
+        padding-left: 5px;
+    }    
+    .field button[type="button"] {
+       background-color: transparent;
+       border: none;
+       text-align: center;
+    }
+
+    .btn-agendar{
+        color: #fff; 
+        background-color: #0071c2;
+        padding: 10px 15px;
+        font-weight: bold;
+        border-radius: 3px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
+/* ------------------ Fim Seção Busca ------------------ */
+
+/* ------------------ Seção Destinos ------------------ */
+
+    /* Espaço superior */
+    .destinations {
+        margin-top: 2rem;
+    }
+
+    /* Lista de imóveis */
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }    
+    .list img {
+        width: 200px;
+    }    
+    .list a {
+        text-decoration: none;
+    }    
+    .list h5 {
+        color: #000;
+        font-size: 1rem;
+    }    
+    .list p, .list span{
+        color: #747474;
+        font-size: .9rem;
+        width: 100%;
+    }
+
+    .list-residences{
+        justify-content: flex-start;
+    }    
+    .list-residences h5{
+        font-size: 13px;
+        width: 80%;
+    }    
+    .list-residences >  l1 {
+        margin-right: 3rem;
+    }    
+    .list-residences span:nth-child(1){
+        background-color: #003580;
+        color: #fff;
+        padding: 3px;
+        border-radius: 5px 5px 5px 0;
+    }    
+    .list-residences span:nth-child(2){
+        font-size: 12px;
+        color: #000;
+    }    
+    .list-residences span:nth-child(3){
+        font-size: 13px;
+    }    
+    .list-residences p:nth-child(2){
+        margin: 4px 0;
+    }
+
+    /* Card do imóvel */
+    .card{
+        background-color: #e7e7e7;
+        border-radius: 10px;
+        padding: 7px 12px;
+        align-items: center;    
+        justify-content: center;
+        transition: 1s;
+        margin: 10px;
+        cursor: pointer;
+    }    
+    .card:hover{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.1);
+    }
+
+/* ------------------ Fim Seção Destinos ------------------ */
+
+/* ------------------ Seção Ofertas ------------------ */
+
+    /* Container geral */
+    .offers {
+        margin-top: 2rem;
+    }
+    .offers > p {
+        color-scheme: #6b6b6b;
+    }
+
+    /* Container da lista */
+    .offers-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Container do item */
+    .offers-banner {
+        color: white;
+        background-image: url("../assets/banner-oferta.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+        border-radius: 10px;
+        padding: 1rem;
+        margin-right: 2rem;
+        height: 10rem;
+    }
+    .offers-banner h4, p {
+        width: 60%;
+        margin-bottom: 10px;
+    }
+    .offers-banner button, .app-banner button {
+        background-color: #0071c2;
+        padding: 10px 15px;
+        font-weight: bold;
+        border-radius: 3px;
+        margin-top: 10px;
+        border: none;
+    }
+    .offers-banner button a, .app-banner a {
+        text-decoration: none;
+        color: white;
+    }
+
+    /* Banner 2 */
+    .app-banner {
+        box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.16);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        width: 50%;
+    }    
+    .app-banner p {
+        margin: .5rem 0; /* .5 é igual a 0.5 */
+        width: 70%;
+    }
+
+    .img-app {
+        width: 150px;
+    }
+        
+/* ------------------ Fim Seção Ofertas ------------------ */
+
+/* ------------------ Seção Economize ------------------ */
+
+    /* Container geral */
+    .news-letter{
+        background-color: #062755;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 3rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .news-letter h2{
+        font-weight: 300;
+    }
+    .news-letter p {
+        color: #bdbdbd;
+    }
+    .news-letter > form{
+        width: 355px;
+        height: 40px;  
+        border-radius: 5px;
+        padding-left: 10px;
+        font-size: 1rem;
+        border: none;
+    }
+    .news-letter > form > input[type="email"]{
+        width: 355px;
+        height: 40px;        
+        border-radius: 5px;
+        padding-left: 10px;
+        font-size: 1rem;
+        border: none;
+    }
+    .news-letter > form > input[type="submit"]{
+        background-color: #0071c2;
+        color: #fff;
+        border-radius: 5px; 
+        border: none;
+        padding: .6rem 1rem;
+        margin-left: 5px;
+    }
+    .news-letter > form {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Container geral */
+    #sales {
+        background-color: #003580;
+        text-align: center;
+    }    
+    #sales > div {
+        padding: 1rem 0;
+        border-bottom: 1px solid #fff;
+    }
+    
+    /* Botão sales */
+    .btn-sales{
+        background-color: transparent;
+        border: 1px solid #fff;
+        border-radius: 2px;
+        padding: 5px 10px;
+        margin: 1rem 0;
+    }    
+    .btn-sales a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    /* Container menu de opções */
+    .menu-sales{
+        border-top: 1px solid #fff;
+    }    
+    .menu-sales ul{
+        display: flex;
+        justify-content: center;
+    }    
+    .menu-sales ul li a{
+        font-weight: 700;
+        font-size: 13px;
+        color: #fff;
+        margin-right    : 15px;
+    }
+
+/* ------------------ Fim Seção Economize ------------------ */
+
+/* ------------------ Seção Footer ------------------ */
+
+    /* Container geral */
+    .options-footer{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .options-footer ul {
+        margin-right: 2rem;
+    }
+
+    /* Seção footer geral */
+    footer{
+        margin: 2rem 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }            
+    footer a {
+        color: #0071c2;
+        text-decoration: none;
+        margin: 5rem 0;
+        font-weight: 500;
+    }    
+    footer > div:nth-child(2){
+        margin-top: 2rem;
+    }    
+    footer > div > a {
+        color: #6b6b6b;
+    }
+
+/* ------------------ Fim Seção Footer ------------------ */
+
+/* ------------------ Seção Responsiva ------------------ */
+
+    /* Largura máxima 600px */
+    @media (max-width: 600px) {
+        #form-filter-content {
+            flex-direction: column;
+            min-height: 250px;
+        }
+
+        .offers-list {
+            display: block;
+        }
+
+        .offers-banner {
+            width: 100%;
+        }
+
+        .app-banner {
+            margin-top: 10px;
+            width: 100%;
+        }
+        
+        .offers > p {
+            width: 100%;
+        }
+
+        .app-banner p {
+            width: 100%;
+        }    
+    }
+
+/* ------------------ Fim Seção Responsiva ------------------ */

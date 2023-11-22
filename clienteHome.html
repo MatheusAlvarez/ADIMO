@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ADIMO - Cliente Home</title>
+        <link rel="stylesheet" href="./styles/cliente.css">
+    </head>
+    <body>
+        
+        <!-- ------------------- Seção HEADER ------------------- -->
+        <header id="header-content">
+            <div class="container">
+                <nav class="logo">
+                    <p>ADIMO</p>                    
+                    <div class="row-center">
+                        <div class="row-center">
+                            <button id="brl-button">BRL</button>
+                            <button id="button-language">
+                                <img src="assets/bandeira-br.png" alt="Moeda">
+                            </button>
+                            <a id="info-button" href="#">?</a>
+                        </div>                                    
+                    </div>
+                </nav>
+                <nav id="menu-options">
+                    <ul class="row-center">
+                        <li>
+                            <a href="clienteHome.html" class="row-center">                                    
+                                <span>Apartamentos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="clienteHome.html" class="row-center">                                    
+                                <span>Mansões</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="historia.html" class="row-center">                                    
+                                <span>Historia</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    <!-- ------------------- FIM Seção HEADER ------------------- -->
+
+        <!-- ------------------- Seção Banner Inicial ------------------- -->
+            <section id="banner-apresentation">
+                <div class="container">
+                    <p>Melhor imobiliária do mercado!!</p>                
+                    <h1>Sua busca por imóvel nunca foi tão simples!</h1>
+                    <p>Em dúvida? Reserve a estadia perfeita por menos</p>
+                    <button>
+                        <a href="#">
+                            Ver ofertas
+                        </a>
+                    </button>
+                </div>
+            </section>
+        <!-- ------------------- FIM Seção Banner Inicial ------------------- -->
+
+        <!-- ------------------- Seção de Busca ------------------- -->
+            <div class="container">
+                <form>
+                    <div id="form-filter-content">
+                        <div class="field">
+                            <input type="text" id="search" name="destino" placeholder="O que você procura?">
+                        </div>
+                        <div class="field">
+                            <button type="button">Melhores Oporunidades!</button>
+                        </div>
+                        <div class="field">
+                            <button type="button">Melhores valores do mercado!</button>
+                        </div>                        
+                    </div>    
+                </form>            
+            </div>
+        <!-- ------------------- Seção de Busca ------------------- -->            
+
+        <!-- ------------------- Seção de Destinos ------------------- -->            
+            <section class="container destinations">
+        
+                <h2>Sua lista de favoritos ⭐</h2>                
+
+                <ul id="interest-list"></ul><br>
+                <button class="btn-agendar">                
+                    Agendar visitas                  
+                </button>
+
+                <!-- ---------- Seção Apartamentos ---------- -->
+                    <h2>Apartamentos</h2>
+                    <p>Estes apartamentos são compatíveis com sua renda</p></p>
+            
+                    <ul class="list list-residences">
+                        <li class="card" data-name="Apartamento 100m²">      
+                            <a href="./imovel.html" target="_blank">
+                                <img src="assets/apartamentos/01.webp" alt="Apartamento 100m²">
+                                <div>
+                                    <h5>Apartamento 100m²</h5>
+                                    <p>Praga 1, República Tcheca</p>
+                                    <p>A partir de <strong>R$ 631</strong></p>
+                                </div>
+                                <div>
+                                    <span>8.4</span>
+                                    <span>Muito bom</span>
+                                    <span>249 avaliações</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card" data-name="Apartamento 53m²">          
+                            <a href="./imovel.html" target="_blank">
+                                <img src="assets/apartamentos/02.webp" alt="Apartamento 53m²">
+                                <div>
+                                    <h5>Apartamento 53m²</h5>
+                                    <p>06. Terézváros, Hungria</p>
+                                    <p>A partir de <strong>R$ 684</strong></p>
+                                </div>
+                                <div>
+                                    <span>8.8</span>
+                                    <span>Fabuloso</span>
+                                    <span>6.967 avaliações</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card" data-name="Apartamento 77m²">
+                            <a href="./imovel.html" target="_blank">
+                                <img src="assets/apartamentos/03.webp" alt="Apartamento 77m²">
+                                <div>
+                                    <h5>Apartamento 77m²</h5>
+                                    <p>06. Terézváros, Hungria</p>
+                                    <p>A partir de <strong>R$ 684</strong></p>
+                                </div>
+                                <div>
+                                    <span>8.8</span>
+                                    <span>Fabuloso</span>
+                                    <span>6.111 avaliações</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card" data-name="Apartamento 90m²">
+                            <a href="./imovel.html" target="_blank">
+                            <img src="assets/apartamentos/04.webp" alt="Apartamento 90m²">
+                            <div>
+                                <h5>Apartamento 90m²</h5>
+                                <p>Praga 1, República Tcheca</p>
+                                <p>A partir de <strong>R$ 522</strong></p>
+                            </div>
+                            <div>
+                                <span>8.8</span>
+                                <span>Fabuloso</span>
+                                <span>414 avaliações</span>
+                            </div>
+                        </a>
+                        </li>
+                        <li class="card" data-name="Apartamento 55m²">
+                            <a href="./imovel.html" target="_blank">
+                            <img src="assets/apartamentos/02.webp" alt="Apartamento 55m²">
+                            <div>
+                                <h5>Apartamento 55m²</h5>
+                                <p>Praga 1, República Tcheca</p>
+                                <p>A partir de <strong>R$ 522</strong></p>
+                            </div>
+                            <div>
+                                <span>8.8</span>
+                                <span>Fabuloso</span>
+                                <span>894 avaliações</span>
+                            </div>
+                            </a>
+                        </li>
+                    </ul>
+                <!-- ---------- FIM Seção Apartamentos ---------- -->
+
+                <!-- ---------- Seção Mansões ---------- -->
+                    <h2>Mansões</h2>
+                    <p>Estas mansões são compatíveis com sua renda</p>
+            
+                    <ul class="list list-residences">
+                        <li class="card" data-name="Mansão 2.222m²">
+                            <a href="./imovel.html" target="_blank">
+                            <img src="assets/mansoes/mansao4.svg" alt="Mansão 2.222m²">
+                            <div>
+                                <h5>Mansão 2.222m²</h5>
+                                <p>Praga 1, República Tcheca</p>
+                                <p>A partir de <strong>R$ 4.199</strong></p>
+                            </div>
+                            <div>
+                                <span>8.4</span>
+                                <span>Muito bom</span>
+                                <span>2.345 avaliações</span>
+                            </div>
+                            </a>
+                        </li>
+                        <li class="card" data-name="Mansão 3.841m²">    
+                            <a href="./imovel.html" target="_blank">            
+                            <img src="assets/mansoes/mansao5.svg" alt="Mansão 3.841m²">
+                            <div>
+                                <h5>Mansão 3.841m²</h5>
+                                <p>06. Terézváros, Hungria</p>
+                                <p>A partir de <strong>R$ 5.684</strong></p>
+                            </div>
+                            <div>
+                                <span>8.8</span>
+                                <span>Fabuloso</span>
+                                <span>6.967 avaliações</span>
+                            </div>
+                            </a>
+                        </li>
+                        <li class="card" data-name="Mansão 7.834m²"> 
+                            <a href="./imovel.html" target="_blank">                       
+                            <img src="assets/mansoes/mansao1.svg" alt="Mansão 7.834m²">
+                            <div>
+                                <h5>Mansão 7.834m²</h5>
+                                <p>06. Terézváros, Hungria</p>
+                                <p>A partir de <strong>R$ 7.684</strong></p>
+                            </div>
+                            <div>
+                                <span>8.8</span>
+                                <span>Fabuloso</span>
+                                <span>6.967 avaliações</span>
+                            </div>     
+                            </a>                       
+                        </li>
+                        <li class="card" data-name="Mansão 3.564m²"> 
+                            <a href="./imovel.html" target="_blank">                         
+                                <img src="assets/mansoes/mansao2.svg" alt="Mansão 3.564m²">
+                                <div>
+                                    <h5>Mansão 3.564m²</h5>
+                                    <p>Praga 1, República Tcheca</p>
+                                    <p>A partir de <strong>R$ 6.522</strong></p>
+                                </div>
+                                <div>
+                                    <span>8.8</span>
+                                    <span>Fabuloso</span>
+                                    <span>414 avaliações</span>
+                                </div>   
+                            </a>                         
+                        </li>
+                        <li class="card" data-name="Mansão 4.554m²">     
+                            <a href="./imovel.html" target="_blank">                     
+                               <img src="assets/mansoes/mansao3.svg" alt="Mansão 4.554m²">
+                                <div>
+                                    <h5>Mansão 4.554m²</h5>
+                                    <p>Praga 1, República Tcheca</p>
+                                    <p>A partir de <strong>R$ 4.622</strong></p>
+                                </div>
+                                <div>
+                                    <span>8.8</span>
+                                    <span>Fabuloso</span>
+                                    <span>414 avaliações</span>
+                                </div>  
+                            </a>                          
+                        </li>
+                    </ul>
+                <!-- ---------- FIM Seção Mansões ---------- -->               
+
+            </section>
+        <!-- ------------------- FIM Seção de Destinos ------------------- -->            
+
+        <!-- ------------------- Seção Ofertas ------------------- -- -->
+            <article class="container offers">
+                <h2>Ofertas</h2>
+                <p>Promoções e ofertas especiais para você</p>
+        
+                <ul class="offers-list">
+                    <li class="offers-banner">
+                        <h4>Economize 15% com as ofertas de Fim de Ano</h4>
+                        <p>Conheça mais um imóvel da sua lista de desejos</p>
+                        <button>
+                            <a href="#">
+                                Ver ofertas
+                            </a>
+                        </button>
+                    </li>
+                    <li class="app-banner">
+                        <div>
+                            <h4>Sua viagem em um só app</h4>
+                            <p>Encontre o melhor que você procura e muito mais no app
+                                grátis da ADIMO
+                            </p>
+                            <button>
+                                <a href="#">Baixar app</a>
+                            </button>
+                        </div>
+                        <div>
+                            <img src="assets/app.jpeg" alt="Baixar app" class="img-app">
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        <!-- ------------------- Fim Seção Ofertas ------------------- -- -->
+           
+        <!-- ------------------- Seção Economize ------------------- -- -->
+            <section class="news-letter">
+                <h2>Economize tempo, economize dinheiro!</h2>
+                <p>Inscreva-se e enviaremos as melhores ofertas para você</p>
+                <form>
+                    <input type="email" placeholder="Seu e-mail:" name="email" id="email">
+                    <input type="submit" value="Inscreva-se">
+                </form>
+            </section>
+
+            <div id="sales">
+                <button class="btn-sales">
+                    <a href="#">
+                        Anuncie sua propriedade
+                    </a>
+                </button>
+                <div class="menu-sales">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Versão para celular
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Sua Conta</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Faça alterações em sua locação on-line
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Serviço de apoio ao cliente
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Torne-se cliente
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                ADIMO.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <!-- ------------------- Fim Seção Economize ------------------- -- -->
+
+        <!-- ------------------- Seção Footer ------------------- -- -->
+            <footer>
+                <div class="options-footer">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Países
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Regiões
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Cidades
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Casas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Apartamentos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Mansões
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Villas
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Lugares únicos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Todos os imóveis</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Descubra</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Avaliações</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Conheça as estadias mensais</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Aluguel de casas</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Pesquisa de lugares</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Agendar visita</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Perguntas frequentes</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Sobre a ADIMO.com</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Serviço de apoio ao Cliente</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Central de ajuda ao Parceiro</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#">Acesso à ADIMO</a>
+                </div>
+            </footer>
+        <!-- ------------------- Fim Seção Footer ------------------- -- -->
+    
+    </body>
+
+    <script src="script/buscar.js"></script>
+    
+</html>

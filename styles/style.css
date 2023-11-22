@@ -1,0 +1,205 @@
+
+/* ---------- CSS Padrão ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: #32324f;
+    font-weight: 600;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* ---------- CSS Container principal ---------- */
+.container-login {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+/* ---------- Imagem Mansão Login ---------- */
+.img-box {
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------- Container dos dados de login ---------- */
+.content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+/* ---------- Container do formulário ---------- */
+.form-box {
+    width: 50%;
+}
+
+
+/* ---------- Container dos inputs dos formulários ---------- */
+.input-box {
+    margin-bottom: 20px;
+}
+
+
+/* Campos input */
+.content-box .form-box .input-box input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-weight: 400;
+    border: none;
+    font-size: 17px;
+    color: #32324f;
+    background-color: #ecf2f7;
+    border-radius: 5px;
+}
+
+.content-box .form-box .input-box input::placeholder {
+    color: #a9adb6;
+}
+
+.content-box .form-box .input-box input[type=submit] {
+    background: #89DBB1;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.content-box .form-box .input-box input[type=submit]:hover {
+    background: #89DBB1;
+}
+
+
+/* ---------- Container dos span dos formulários ---------- */
+.content-box .form-box .input-box span {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #32324f;
+    font-weight: 400;
+}
+
+/* ---------- Container dos remebers dos formulários ---------- */
+.content-box .form-box .remember{
+    margin-bottom: 20px;
+    color: #32324f;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-box .form-box .remember a{
+    text-decoration: none;
+    color: #00a1b6;
+}
+.content-box .form-box .remember a:hover{
+    color: #004e58;
+}
+
+/* ---------- Tag p nos input ---------- */
+.content-box .form-box .input-box p {
+    color: #32324f;
+}
+.content-box .form-box .input-box p a{
+    color: #00a1b6;
+}
+
+.content-box .form-box .input-box p a:hover{
+    color: #004e58;
+}
+
+/* ---------- H3 nos formulários ---------- */
+.content-box .form-box h3
+{
+    color: #607d8b;
+    text-decoration: none;
+    margin: 40px 0 15px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+/* ---------- Botão entrar ---------- */
+
+.input-button{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.btnEntrar{    
+    background: #003580;
+    color: #fdfdfd;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+    width: 100%;
+    height: 40px;    
+    margin: 20px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.btnEntrar:hover{
+    background: #011531;
+}
+
+/* ---------- Responsividade ---------- */
+@media (max-width:868px) {
+    .container-login .img-box{
+        display: none;
+    }
+    .container-login .content-box{
+        width: 100%;
+    }
+    .container-login .content-box .form-box{
+        width: 100%;
+        padding: 40px;
+        background: white;
+        margin: 50px;
+    } 
+    .container-login .content-box .form-box h3{
+        margin: 30px 0 10px;
+    } 
+}
+
+@media (max-width:450px) {
+    .container-login .content-box .form-box .remember{
+        flex-wrap: wrap;
+    }
+    .container-login .content-box .form-box .remember a{
+        margin-top: 20px;
+    }
+    
+    .content-box .form-box .input-box p {
+        font-size: 13px;
+    }
+
+}
